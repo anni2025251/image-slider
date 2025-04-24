@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: #111;
+      }
+  
+      .slider-container {
+        width: 100%;
+        height: 190px;
+        overflow: hidden;
+        position: relative;
+        padding: 50%;
+      }
+  
+      .slider-track {
+        display: flex;
+        width: max-content;
+        animation: scroll-left 60s linear infinite;
+      }
+  
+      .slider-track img {
+        width: 180px;
+        height: 120px;
+        object-fit: cover;
+        margin-right: 10px;
+        border-radius: 10px;
+      }
+  
+       @keyframes scroll-left {
+        0% {
+          transform: translateX(-50%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      } 
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider-track" id="sliderTrack">
+          <!-- JS will insert 100 images x 2 for infinite scroll -->
+          <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486355152_1089282749884578_2864066501182964939_n.jpg" /> 
+          <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486313836_1089989863147200_3831877542294596489_n.jpg" /> 
+          <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485154185_1084719510340902_5950433399858784593_n.jpg" /> 
+          <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485075598_1084703470342506_3471065158365812992_n.jpg" /> 
+          <img src="https://zicoverseas.com/wp-content/uploads/2025/04/484954133_1084739493672237_3652227770878522257_n.jpg" /> 
+          <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481977935_1075668064579380_6777420256791402124_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481456995_1067718435374343_2233788151772369912_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481355473_1069877238491796_1076417783766371644_n-1.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481311141_1067716442041209_4090978269442729516_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481261529_1067713968708123_4633396620940431078_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481099412_1067714178708102_1003830507627154101_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481013290_1067711618708358_2999002827571672813_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/474092480_981438560571430_7682625897744133947_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/473804057_982766183772001_1083424720171301157_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/473522325_982761540439132_8624273644431613573_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/488207263_1096157415863778_9203736200359612206_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/487411093_1093250389487814_6696090671802495645_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/487385113_1093303276149192_8604945034415009477_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/487348868_1093257729487080_5724956819895064359_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486835396_1093306082815578_3897519705445343998_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486742870_1089284639884389_2644011149145612059_n.jpg" /> 
+    <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486593031_1089301359882717_8048010999618206485_n.jpg" /> 
+          <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486532044_1089281839884669_5625876721471819332_n.jpg" /> 
+          <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486496702_1088907399922113_6791475774029078240_n.jpg" /> 
+          <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485883810_1086158380197015_8206163685910942706_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485729007_1086825860130267_8528647183927806704_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485609047_1086182490194604_644458871169118582_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485404265_1086825853463601_7055731854777128787_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485360099_1086162806863239_3526156527968198540_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485145833_1084734690339384_4580509023773284577_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485071111_1083918893754297_5577276492232956667_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481773985_1067477865398400_8659102169351489897_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481483505_1066759172136936_3971311061744648255_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481258840_1067713988708121_3012708778691641258_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481200779_1067697495376437_5820167804561981424_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481237864_1067699645376222_2082945958920933637_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481085255_1066753242137529_7543248727858704585_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481072136_1067712668708253_930816011626484937_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481045988_1069867268492793_697936117637302778_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/480972471_1067489005397286_2818482266888705598_n.jpg" />               <img src="https://zicoverseas.com/wp-content/uploads/2025/04/480900291_1067714002041453_4105690056333088983_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/480803335_1065458965600290_8031166260099191735_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/474492689_982761443772475_8897086887044069994_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/474166217_981438857238067_7862616510729448581_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/474033661_981444257237527_5380395319644748425_n.jpg" /> 
+                <img src="https://zicoverseas.com/wp-content/uploads/2025/04/474007556_981438003904819_6378024228211980171_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/473809767_982763807105572_6693978607487684050_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/473803411_982761653772454_5567586827718944176_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/472970156_975646714483948_7787831474210161515_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/471235554_963787115669908_5483051919635117853_n.jpg" /> 
+                <img src="https://zicoverseas.com/wp-content/uploads/2025/04/470530454_958462709535682_7445096279006931993_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/487482347_1093246279488225_8092505173795786042_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486712118_1092067286272791_1509301862510433290_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486462843_1089308256548694_6451647846995861203_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486408871_1093314929481360_5366683511722907514_n.jpg" /> 
+  
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/486142074_1088907576588762_5551726821023643162_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485762137_1086819576797562_7854306179974938012_n.jpg" /> 
+                <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485736331_1086819916797528_7303296954974233154_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/485151657_1084703337009186_5111401941495918987_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/482068965_1075741251238728_660922642893877265_n.jpg" /> 
+        <img src="https://zicoverseas.com/wp-content/uploads/2025/04/481313573_1075730751239778_4853261528011211289_n.jpg" /> 
+ 
+
+        </div>
+      </div>
+      
+  
+<script src="./script.js"></script>
+</body>
+</html>
